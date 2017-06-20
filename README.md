@@ -1,5 +1,7 @@
 # drw25-misc-matlab
-  miscellanous MATLAB tools
+-- miscellanous MATLAB tools
+
+FVtoPOVRay converts a MATLAB faces and vertices structure (eg. as made by the isosurface function) to an input file for the POV-Ray raytracer (http://www.povray.org)
 
 FVtoVRML converts a MATLAB faces and vertices structure (eg. as made by the isosurface function) to VRML
 
