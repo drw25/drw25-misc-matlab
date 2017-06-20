@@ -41,7 +41,7 @@ header = [''];
 data = ['union{' newline];
 
 for i = 1:numel(fv)
-    fv(i).vertices = fv(i).vertices+(-0.5+rand(size(fv(i).vertices)))*1e-2; %jitter to avoid nasty artefacts from coincidental planes
+    %fv(i).vertices = fv(i).vertices+(-0.5+rand(size(fv(i).vertices)))*1e-2; %jitter to avoid nasty artefacts from coincidental planes
     if ~isempty(fv(i).faces)
     data = [data 'mesh { ' newline];
     for j = 1:size(fv(i).faces,1)
