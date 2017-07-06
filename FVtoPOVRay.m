@@ -19,7 +19,9 @@ function data = FVtoPOVRay(fv,filename,col,trans,colourmodel,bgcolour)
 % Background colour can be specified by the variable bgcolour, again RGB
 % triplet on scale [0,1].
 %
-% Daniel Warren - August 2015
+% Daniel R Warren
+% August 2015
+% http://github.com/drw25
 
 if ~exist('col','var')
     col = repmat([0 1 0],[numel(fv) 1]);

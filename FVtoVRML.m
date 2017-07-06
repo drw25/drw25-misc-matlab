@@ -15,7 +15,9 @@ function out = FVtoVRML(fv,filename,col,trans,diffuse)
 % diffuse, a logical vector of length n, with false indicating an emissive
 % color model and true representing a diffuse color model.
 %
-% Daniel Warren - August 2015
+% Daniel R Warren
+% August 2015
+% http://github.com/drw25
 
 if ~exist('col','var')
     col = ones(numel(fv),3);

@@ -8,7 +8,9 @@ function map = LUT2Map(fn,format)
 %
 % Seems to work for all lookup tables in the FIJI ImageJ distribution.
 %
-% Daniel Warren 2017
+% Daniel R Warren
+% April 2017
+% http://github.com/drw25
 
 % Read input file as 8-bit integers
 fid = fopen(fn,'r');

@@ -22,7 +22,9 @@ function h = txtwaitbar(varargin)
 %
 % Only tested in MATLAB R2013b-R2016b on Windows.
 %
-% Daniel Warren - June 2017
+% Daniel R Warren
+% June 2017
+% http://github.com/drw25
 
 nargin = numel(varargin);
 

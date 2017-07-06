@@ -21,8 +21,9 @@ function [CC DC] = SGolayND(p,w)
 %         differential of the smoothed function. DC{m,n} is differential of
 %         order (m-1) in dimension 1 and (n-1) in dimension 2.
 %
-% Daniel Warren
+% Daniel R Warren
 % July 2017
+% http://github.com/drw25
 
 % Skip dimensions with smoothing window size 1
 w_init = w;
