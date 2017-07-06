@@ -72,7 +72,7 @@ DC = cell(repmat(1+p,[1 d]));
 DCsubs = num2cell(1+q,1);
 DCind = sub2ind(size(DC),DCsubs{:});
 for i = 1:size(C,1)
-    DC{DCind(i)} = C(i,:);
+    DC{DCind(i)} = C(i,:)*prod(factorial(q(i,:))); % multiply by differentiation coefficients
     if numel(w_init) > 1
         DC{DCind(i)} = reshape(DC{DCind(i)},w_init);
     end
