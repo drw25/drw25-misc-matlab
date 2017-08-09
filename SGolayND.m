@@ -68,7 +68,7 @@ C = (J'*J)\(J');
 
 % First row of C is smoothing; subsequent rows are numerical derivatives.
 % Create cell DC with convolution coefficients for all orders of derivatives
-DC = cell(repmat(1+p,[1 d]));
+DC = cell([repmat(1+p,[1 d]) 1]);
 DCsubs = num2cell(1+q,1);
 DCind = sub2ind(size(DC),DCsubs{:});
 for i = 1:size(C,1)
